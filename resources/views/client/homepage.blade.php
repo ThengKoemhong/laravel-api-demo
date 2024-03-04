@@ -16,26 +16,6 @@
 
 <body class="w-100 justify-content-center  d-flex  flex-column  align-items-center ">
     <div class=" d-flex justify-content-between w-100 flex-column ">
-        <ul class="nav d-flex bg-dark w-100 " style="padding-left: 50px">
-            <li class="nav-item d-flex justify-content-center align-items-center col-1 bg-danger  " id="item0">
-                <i class='bx bxs-home-alt-2 ' style="font-size: 25px" ></i>
-            </li>
-
-            <li class="nav-item  " id="item1">
-                <a class="nav-link text-light ">Computer</a>
-            </li>
-
-            <li class="nav-item  " id="item2">
-                <a class="nav-link text-light  ">Phone</a>
-            </li>
-
-            <li class="nav-item  " id="item3">
-                <a class="nav-link text-light ">Airpot</a>
-            </li>
-            <li class="nav-item  " id="item4">
-                <a class="nav-link text-light ">Game Console</a>
-            </li>
-        </ul>
         <div id="homeview" class="d-block ">
             <div class="w-100 d-flex justify-content-around">
                 <div class="w-50 d-block bg-light m-2" >
@@ -142,46 +122,7 @@
         </div>
     </div>
     <script>
-        $(document).ready(function() {
-            var item = ['#item0','#item1', '#item2', '#item3', '#item4'];
-            $(item[0]).click(function() {
-                for (var i = 0; i < item.length; i++) {
-                    $(item[0]).addClass('bg-danger');
-                    $(item[i]).removeClass('bg-danger');
-                    $('#homeview').load("{{ url('home') }}");
-
-                }
-            });
-            $(item[1]).click(function() {
-                for (var i = 0; i < item.length; i++) {
-                    $(item[1]).addClass('bg-danger');
-                    $(item[i]).removeClass('bg-danger');
-                    $('#homeview').load("{{ url('homepage/computer') }}");
-
-                }
-            });
-            $(item[2]).click(function() {
-                for (var i = 0; i < item.length; i++) {
-                    $(item[2]).addClass('bg-danger');
-                    $(item[i]).removeClass('bg-danger');
-                    $('#homeview').load("{{ url('homepage/phone') }}");
-                }
-            });
-            $(item[3]).click(function() {
-                for (var i = 0; i < item.length; i++) {
-                    $(item[3]).addClass('bg-danger');
-                    $(item[i]).removeClass('bg-danger');
-                    $('#homeview').load("{{ url('homepage/airport') }}");
-                }
-            });
-            $(item[4]).click(function() {
-                for (var i = 0; i < item.length; i++) {
-                    $(item[i]).removeClass('bg-danger');
-                    $(item[4]).addClass('bg-danger');
-                    $('#homeview').load("{{ url('homepage/gameconsole') }}");
-                }
-            });
-        })
+        
     </script>
 </body>
 

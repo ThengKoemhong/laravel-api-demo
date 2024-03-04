@@ -21,6 +21,7 @@ Route::get('/loginview',[viewController::class,'index']);
 Route::post('/login_data',[viewController::class,'login']);
 Route::post('/signUp',[viewController::class,'signUp']);
 Route::get('/homepage',[viewController::class,'homepage']);
+Route::get('/home',[viewController::class,'showhomepage']);
 Route::get('/homepage/computer',[viewController::class,'showcomputer']);
 Route::get('/homepage/phone',[viewController::class,'showphone']);
 Route::get('/homepage/airport',[viewController::class,'showairpot']);

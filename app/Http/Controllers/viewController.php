@@ -18,6 +18,7 @@ class viewController extends Controller
             return redirect('homepage');
         }
     }
+
     public function sigUp(){
         return view('client/sign_up');
     }
@@ -32,5 +33,8 @@ class viewController extends Controller
     }
     public function showgame(){
         return view('client/productgame');
+    }
+    public function showhomepage(){
+        return view('client/homepage');
     }
 }
