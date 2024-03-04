@@ -26,3 +26,4 @@ Route::get('admin/user',[AdminController::class,'showuser']);
 Route::get('admin/feedback',[AdminController::class,'showfeedback']);
 Route::get('admin/category',[AdminController::class,'showcategory']);
 Route::get('admin/product',[AdminController::class,'showproduct']);
+Route::get('admin/category/add',[AdminController::class,'showaddcategory']);

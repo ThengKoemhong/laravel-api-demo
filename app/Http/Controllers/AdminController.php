@@ -21,4 +21,7 @@ class AdminController extends Controller
     public function showfeedback(){
         return view('admin/feedback');
     }
+    public function showaddcategory(){
+        return view('admin/addcategory');
+    }
 }

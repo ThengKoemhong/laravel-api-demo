@@ -42,6 +42,9 @@
         </div>
         {{-- itemshow --}}
         <div class="w-100 h-100 bg-light " id="homeview">
+            <div class="w-100 h-100 d-flex justify-content-center align-items-center ">
+                <h1>Plese chose One in Menu</h1>
+            </div>
         </div>
     </div>
     <script>
@@ -52,7 +55,6 @@
                 for (var i = 0; i < item.length; i++) {
                     $(item[0]).addClass('bg-danger');
                     $(item[i]).removeClass('bg-danger');
-                    $(item[i]).css('background-color', 'black');
                     $('#homeview').load("{{ url('admin/user') }}");
                     
                 }
@@ -61,7 +63,6 @@
                 for (var i = 0; i < item.length; i++) {
                     $(item[1]).addClass('bg-danger');
                     $(item[i]).removeClass('bg-danger');
-                    $(item[i]).css('background-color', 'black');
                     $('#homeview').load("{{ url('admin/feedback') }}");
                 }
             });
@@ -69,15 +70,13 @@
                 for (var i = 0; i < item.length; i++) {
                     $(item[2]).addClass('bg-danger');
                     $(item[i]).removeClass('bg-danger');
-                    $(item[i]).css('background-color', 'black');
                     $('#homeview').load("{{ url('admin/category') }}");
                 }
             });
             $(item[3]).click(function() {
                 for (var i = 0; i < item.length; i++) {
-                    $(item[3]).addClass('bg-success');
                     $(item[i]).removeClass('bg-danger');
-                    $(item[i]).css('background-color', 'black');
+                    $(item[3]).addClass('bg-danger');
                     $('#homeview').load("{{ url('admin/product') }}");
                 }
             });

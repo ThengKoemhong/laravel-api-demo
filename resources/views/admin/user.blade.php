@@ -4,9 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="{{ url('https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css') }}" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
     <title>Document</title>
 </head>
 <body style="background-color: red">
-    <h1>UserHello</h1>
+    <table class="table table-striped ">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Firtname</th>
+                <th scope="col">lastname</th>
+                <th scope="col">password</th>
+                <th scope="col">Profile</th>
+                <th scope="col">Create at</th>
+                <th scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
 </body>
 </html>

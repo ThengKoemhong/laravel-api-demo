@@ -15,10 +15,11 @@
     </style>
 </head>
 <body style="width: 100%;height: 700px;" class="d-flex justify-content-center align-items-center " >
-    <div class="w-50 h-50 rounded-2 shadow-sm  bg-danger justify-content-center d-flex flex-column align-items-center  " id="form">
+    <img class="w-25 h-75 rounded-2 shadow-sm  bg-light" src="images/Secure login.png">
+    <div class="w-50 h-75 rounded-2 shadow-sm  bg-danger justify-content-center d-flex flex-column align-items-center  " id="form">
         <h1>Create New Account</h1>
         <table class="w-75">
-            <form action="" id="signup_form"  class="d-flex justify-content-center  align-items-center " >
+            <form action="" id="signup_form"  class="d-flex justify-content-center  align-items-center " enctype="multipart/form-data">
                 @csrf
                 <tr>
                     <td>
@@ -56,6 +57,17 @@
                         <input type="password" name="password" id="password" class="form-control w-100  " placeholder="Create your password">
                     </td>
                 </tr>
+                
+                <tr>
+                    <td>
+                        <label for="">Profile</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="file" name="profile" id="profile" >
+                    </td>
+                </tr>
                 <tr>
                     <td colspan="2">
                         <br>
@@ -65,6 +77,5 @@
               </form>
         </table>
     </div>
-    <img class="w-25 h-50 rounded-2 shadow-sm  bg-light" src="images/Secure login.png">
 </body>
 </html>
