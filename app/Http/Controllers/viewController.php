@@ -21,4 +21,16 @@ class viewController extends Controller
     public function sigUp(){
         return view('client/sign_up');
     }
+    public function showcomputer(){
+        return view('client/productcomputer');
+    }
+    public function showairpot(){
+        return view('client/productairpot');
+    }
+    public function showphone(){
+        return view('client/productphone');
+    }
+    public function showgame(){
+        return view('client/productgame');
+    }
 }

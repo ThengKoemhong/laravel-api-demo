@@ -12,7 +12,6 @@
     <title>Document</title>
 </head>
 <body>
-    <a href="{{ url('admin/category/add') }}" class="btn btn-outline-dark m-2 ">ADD New Catgory</a>
     <table class="table table-striped ">
         <thead>
             <tr>

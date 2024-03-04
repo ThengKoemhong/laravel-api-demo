@@ -12,11 +12,14 @@
     <title>Document</title>
 </head>
 <body>
+    <a href="{{ url('adminproduct/add') }}" class="btn btn-outline-dark m-2 ">ADD New Product</a>
     <table class="table table-striped ">
+
         <thead>
             <tr>
                 <th scope="col">Id</th>
-                <th scope="col">name</th>
+                <th scope="col">Mame</th>
+                <th scope="col">Discription</th>
                 <th scope="col">price</th>
                 <th scope="col">Category</th>
                 <th scope="col">Img</th>
