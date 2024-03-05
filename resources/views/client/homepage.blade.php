@@ -41,6 +41,9 @@
 
                 </div>
             </div>
+            <br>
+            <h3 class="text-light-emphasis " style="margin-left: 40px">New product</h3>
+           <br>
             <div class="justify-content-evenly flex-wrap d-flex ">
                 <div class="card" style="width: 18rem;">
                     <img src="images/gameconsole.png" class="card-img-top" alt="...">

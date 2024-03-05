@@ -19,10 +19,6 @@
             <img src="images/admin.jpg" alt="" class="navadmin">
             <b class="m-2 text-de font-weight-bold h2 ">Admin</b>
         </div>
-        <form class="form-inline d-flex m-2">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
     </nav>
     <div class="w-100 d-flex " style="height: 615px">
         <div class="bg-dark h-100 d-flex flex-column justify-content-between " style="width: 200px">
